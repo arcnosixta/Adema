@@ -237,13 +237,6 @@ img { max-width: 100%; display: block; }
 }
 .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 18px 36px rgba(255, 61, 133, 0.42); }
 
-.btn-ghost {
-  background: rgba(255, 255, 255, 0.7);
-  color: var(--pink-deep);
-  border: 2px solid rgba(255, 61, 133, 0.35);
-}
-.btn-ghost:hover { transform: translateY(-3px); background: #fff; }
-
 .hero-scroll { margin-top: 44px; }
 .mouse {
   display: block;
@@ -439,6 +432,21 @@ img { max-width: 100%; display: block; }
   background: rgba(255, 255, 255, 0.6);
 }
 .footer-year { opacity: 0.7; font-size: 0.82rem; margin-top: 4px; }
+
+.footer-sign {
+  font-family: var(--font-script);
+  font-size: clamp(1.7rem, 6vw, 2.5rem);
+  color: var(--ink);
+  line-height: 1.4;
+}
+.footer-sign-name {
+  background: linear-gradient(100deg, var(--pink-deep), var(--gold));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+.footer-line { margin-top: 6px; }
 
 /* ---------- music button ---------- */
 .music-btn {
