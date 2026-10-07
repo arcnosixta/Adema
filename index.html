@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#ff6fa5">
+  <title>Әдеміге — 19 жас құтты болсын!</title>
+  <meta name="description" content="Әдеміге туған күніне арналған құттықтау сайты">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Playfair+Display:ital,wght@0,500;0,700;1,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="bg-decor" aria-hidden="true">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="blob blob-3"></span>
+  </div>
+
+  <div id="hearts-layer" aria-hidden="true"></div>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <nav class="nav" aria-label="Негізгі мәзір">
+    <a href="#hero" class="nav-logo">Әдемі <span class="nav-heart">♥</span> 19</a>
+    <button type="button" class="nav-burger" id="navBurger" aria-label="Мәзірді ашу" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-menu" id="navMenu">
+      <a href="#hero" class="nav-link">Басты бет</a>
+      <a href="#about" class="nav-link">Туралы</a>
+      <a href="#gallery" class="nav-link">Галерея</a>
+      <a href="#wishes" class="nav-link">Тілектер</a>
+    </div>
+  </nav>
+
+  <header class="hero" id="hero">
+    <p class="hero-kicker reveal">Туған күнің құтты болсын!</p>
+    <h1 class="hero-title reveal">
+      <span class="hero-name">Әдемі</span>
+      <span class="hero-age"><span class="age-number">19</span><span class="age-word">жас</span></span>
+    </h1>
+    <p class="hero-sub reveal">Бүгін — сенің күнің!<br>Ең арманды, ең жарқын жыл тілеймін ✨</p>
+    <div class="hero-actions reveal">
+      <a href="#wishes" class="btn btn-primary">Тілектерді оқу</a>
+      <a href="#gallery" class="btn btn-ghost">Галереяға өту</a>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <span class="mouse"><span class="wheel"></span></span>
+    </div>
+  </header>
+
+  <main>
+    <section class="section about" id="about">
+      <div class="section-head reveal">
+        <span class="section-eyebrow">Әдемі туралы</span>
+        <h2 class="section-title">Сен — ерекшесің</h2>
+      </div>
+      <div class="about-grid">
+        <article class="card about-card reveal">
+          <div class="card-icon">🌸</div>
+          <h3>Нәзік әрі күштісің</h3>
+          <p>Мейірімділігің мен жылылығың — қасыңдағыларға шабыт. Қиындықтан қорықпай, әрқашан алға ұмтыласың.</p>
+        </article>
+        <article class="card about-card reveal">
+          <div class="card-icon">✨</div>
+          <h3>Армандарың зор</h3>
+          <p>19 жас — жаңа бет ашар, үлкен мүмкіндіктердің есігі. Армандарың шындыққа айналсын!</p>
+        </article>
+        <article class="card about-card reveal">
+          <div class="card-icon">💛</div>
+          <h3>Мақтанышымызсың</h3>
+          <p>Қызығушылығың, ой-пікірің, күлкің — бәрі-бәрі сені ерекше етеді. Таныған әр адам бақытты.</p>
+        </article>
+      </div>
+      <blockquote class="about-quote reveal">
+        <p>«Әдемі атыңды ақтайтын, әдемі жүректі қызсың — әр күнің әдемі болсын!»</p>
+      </blockquote>
+    </section>
+
+    <section class="section gallery" id="gallery">
+      <div class="section-head reveal">
+        <span class="section-eyebrow">Галерея</span>
+        <h2 class="section-title">Есте қалар сәттер</h2>
+        <p class="section-sub">Фотолар жақында осы жерге қосылады 📷</p>
+      </div>
+      <div class="gallery-grid" id="galleryGrid">
+        <figure class="photo-tile photo-empty reveal">
+          <div class="photo-placeholder">
+            <span class="photo-icon">📸</span>
+            <span class="photo-label">Фото келе жатыр…</span>
+          </div>
+        </figure>
+        <figure class="photo-tile photo-empty reveal">
+          <div class="photo-placeholder">
+            <span class="photo-icon">📸</span>
+            <span class="photo-label">Фото келе жатыр…</span>
+          </div>
+        </figure>
+        <figure class="photo-tile photo-empty reveal">
+          <div class="photo-placeholder">
+            <span class="photo-icon">📸</span>
+            <span class="photo-label">Фото келе жатыр…</span>
+          </div>
+        </figure>
+        <figure class="photo-tile photo-empty reveal">
+          <div class="photo-placeholder">
+            <span class="photo-icon">📸</span>
+            <span class="photo-label">Фото келе жатыр…</span>
+          </div>
+        </figure>
+        <figure class="photo-tile photo-empty reveal">
+          <div class="photo-placeholder">
+            <span class="photo-icon">📸</span>
+            <span class="photo-label">Фото келе жатыр…</span>
+          </div>
+        </figure>
+        <figure class="photo-tile photo-empty reveal">
+          <div class="photo-placeholder">
+            <span class="photo-icon">📸</span>
+            <span class="photo-label">Фото келе жатыр…</span>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section wishes" id="wishes">
+      <div class="section-head reveal">
+        <span class="section-eyebrow">Жүректен шыққан сөз</span>
+        <h2 class="section-title">Тілектер</h2>
+      </div>
+      <div class="wishes-track" id="wishesTrack">
+        <article class="card wish-card reveal">
+          <span class="wish-heart">♥</span>
+          <p>Туған күнің құтты болсын, Әдемі! 19 жасыңа мың тілектер!</p>
+          <span class="wish-author">— Жүректен</span>
+        </article>
+        <article class="card wish-card reveal">
+          <span class="wish-heart">♥</span>
+          <p>Қалаған армандарың орындалсын, күлкің ешқашан толастамасын!</p>
+          <span class="wish-author">— Тыныштық пен бақыт</span>
+        </article>
+        <article class="card wish-card reveal">
+          <span class="wish-heart">♥</span>
+          <p>Денің сау, махаббатың мол, әр күнің жарқын болсын!</p>
+          <span class="wish-author">— Әрқашан қасыңдамыз</span>
+        </article>
+        <article class="card wish-card reveal">
+          <span class="wish-heart">♥</span>
+          <p>Сен — ең әдемі, ең шынайы, ең кереметсің. Мәңгі осылай жарқыра!</p>
+          <span class="wish-author">— Үлкен ризашылықпен</span>
+        </article>
+        <article class="card wish-card reveal">
+          <span class="wish-heart">♥</span>
+          <p>19 — жаңа сапардың басы. Алда тек ең жақсысы күтсін!</p>
+          <span class="wish-author">— Болашаққа тілек</span>
+        </article>
+        <article class="card wish-card reveal">
+          <span class="wish-heart">♥</span>
+          <p>Сені танығаныма қуаныштымын. Туған күнің құтты болсын! ✨</p>
+          <span class="wish-author">— Құрметпен</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section finale">
+      <div class="finale-inner reveal">
+        <div class="finale-cake" aria-hidden="true">🎂</div>
+        <h2 class="finale-title">19 құтты болсын, Әдемі!</h2>
+        <p class="finale-sub">Бұл сайт — тек саған арналған. Әр күнің осындай мерекедей өтсін!</p>
+        <button type="button" class="btn btn-primary" id="celebrateBtn">Мерекені бастау 🎉</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Жасалған — Әдеміге туған күніне 🎀</p>
+    <p class="footer-year">© <span id="year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
